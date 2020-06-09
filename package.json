@@ -1,0 +1,21 @@
+{
+  "name": "dorf-ball",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodeplotlib": "^0.6.5",
+    "plotly": "^1.0.6",
+    "slp-parser-js": "^4.1.0"
+  },
+  "devDependencies": {
+    "electron": "^9.0.3",
+    "node-sass": "^4.14.1"
+  }
+}

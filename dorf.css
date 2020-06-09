@@ -1,0 +1,25 @@
+.dorf {
+  background-color: #2C2F33;
+  padding: 2rem;
+}
+
+.dorf__logo {
+  width: 350px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+
+.dorf__button {
+    background-color: rgb(24, 26, 27);
+    border: 2px solid rgb(56, 56, 56);
+    color: white;
+    transition-duration: 0.4s;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.dorf_button:hover {
+    background-color: rgb(31, 33, 34);
+}
