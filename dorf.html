@@ -1,18 +1,43 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <meta charset="UTF-8">
     <title>Dorf Ball</title>
     <link rel="stylesheet" href="./dorf.css">
-    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
   </head>
   <body class="dorf">
     <img class="dorf__logo" src="assets/images/dorf-logo.png"></img>
-    <div class="dorf__buttons-container">
-      <button type="button" id="choose-directory-btn" class="dorf__button">
-        Choose Directory
-      </button>
+    <div class="dorf__container">
+      <div class="dorf__configuration">
+        <h3> Slippi Directory </h3>
+        <div class="dorf__buttons-container">
+          <button type="button" id="choose-directory-btn" class="dorf__button">
+            Choose Directory
+          </button>
+          <button type="button" id="process-btn" class="dorf__button">
+            Process
+          </button>
+        </div>
+        <br>
+        <h3> Ports </h3>
+        <div class="dorf__ports-container">
+          <div class="dorf__port">
+            <label> Player 1 </label>
+            <input value="1" type="number" id="player1-port" class="dorf__port-input">
+          </div>
+          <div class="dorf__port">
+            <label> Player 2 </label>
+            <input value="2" type="number" id="player2-port" class="dorf__port-input">
+          </div>
+          <div class="dorf__port">
+            <label> Ganon </label>
+            <input value="4" type="number" id="ganon-port" class="dorf__port-input">
+          </div>
+        </div>
+      </div>
+      <div id="plot" class="dorf__plot"></div>
     </div>
   </body>
 </html>
-<script src="./renderer.js"></script>
+<script src="./dorf.js"></script>
